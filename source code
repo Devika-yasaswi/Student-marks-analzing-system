@@ -1,0 +1,31 @@
+marks=[]
+grade=[]
+total=0
+n=int(input("Enter how many subjects you have:"))
+print("Enter your marks one by one")
+for i in range(n):
+    marks.append((int(input())))
+    if marks[i]>90:
+       grade.append(int(10))
+    elif marks[i]>80:
+       grade.append(int(9))
+    elif marks[i]>70:
+       grade.append(int(8))
+    elif marks[i]>60:
+       grade.append(int(7))
+    elif marks[i]>50:
+       grade.append(int(6))
+    elif marks[i]>40:
+       grade.append(int(5))
+    elif marks[i]>33:
+       grade.append(int(4))
+    else:
+        grade.append(int(0))
+if 0 in marks:
+    print("Failed")
+else:
+    for i in grade:
+     total=total+i
+    f_grade=total/n
+    print("Student's points is ",f_grade) 
+
